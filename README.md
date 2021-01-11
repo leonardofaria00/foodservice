@@ -112,23 +112,27 @@ git clone https://github.com/leonardofaria00/foodservice.git
 ## Usage
 
 <!-- Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources. -->
-Users
+Produtos
 
-GET http://localhost:8080/users
+GET localhost:8080/foodservice/produto
 
-GET http://localhost:8080/users/1
+GET localhost:8080/foodservice/produto/1
 
-PUT http://localhost:8080/users/1
+PUT localhost:8080/foodservice/produto
+{
+	"id": 1,
+	"name": "X-Salada",
+	"preco": 10.00
+}
 
-POST http://localhost:8080/users
+POST localhost:8080/foodservice/produto
+{
+	"name": "X-Tudo",
+	"preco": 10.99
+}
 
-DELETE http://localhost:8080/users/1 
+DELETE localhost:8080/foodservice/produto/1 
 
-Upload Files
-
-GET http://localhost:8080/upload
-
-POST http://localhost:8080/upload
 
 <!-- _For more examples, please refer to the [Documentation](https://example.com)_ -->
 
